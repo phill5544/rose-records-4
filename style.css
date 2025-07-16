@@ -20,13 +20,6 @@ header {
   border-bottom: 1px solid #333;
 }
 
-.header-inner {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
 header h1 {
   font-size: 2.5rem;
 }
@@ -59,16 +52,18 @@ nav a:hover {
   background: #111;
 }
 
-.hero-photo {
-  max-width: 200px;
-  border: 2px solid white;
-  border-radius: 4px;
-  cursor: pointer;
+.hero img {
+  max-width: 300px;
+  border: 3px solid white;
 }
 
 .hero-text h2 {
-  font-size: 1.8rem;
-  text-align: center;
+  font-size: 2rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 section {
@@ -81,35 +76,32 @@ h2 {
   border-bottom: 1px solid white;
   display: inline-block;
   padding-bottom: 0.5rem;
-  font-size: 2.5rem;
 }
 
-.shop-items {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
   margin-top: 1rem;
 }
 
-.item-card {
+.card,
+.art {
   background: #222;
   padding: 1rem;
   border: 1px solid white;
-  text-align: center;
+  transition: background 0.3s;
 }
 
-.item-card img {
-  max-width: 200px;
-  border: 2px solid white;
-  border-radius: 4px;
-  margin-top: 10px;
+.card:hover,
+.art:hover {
+  background: #333;
   cursor: pointer;
 }
 
-.item-title,
-.item-description {
-  font-family: Arial, sans-serif;
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 footer {
@@ -118,24 +110,4 @@ footer {
   background: #111;
   border-top: 1px solid #333;
   font-size: 0.9rem;
-}
-
-.lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border: 2px solid white;
-  border-radius: 4px;
 }

@@ -6,10 +6,30 @@
   <title>Rebel Rose Studios</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 2px solid white;
+      border-radius: 4px;
+    }
+  </style>
 </head>
-<body>
+<body style="font-family: 'UnifrakturCook', cursive;">
   <header>
-    <div class="header-inner">
+    <div style="display: flex; align-items: center; gap: 20px; justify-content: center; flex-wrap: wrap;">
       <h1>Rebel Rose Studios</h1>
     </div>
     <nav>
@@ -20,36 +40,37 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <img class="hero-photo" src="https://i.ibb.co/3Yyskp3k/34200016.jpg" alt="Left Hero" onclick="openLightbox(this.src)" />
-    <div class="hero-text">
+  <section class="hero" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 20px;">
+    <img src="https://i.ibb.co/3Yyskp3k/34200016.jpg" alt="Left Hero Photo" style="max-width: 200px; border: 2px solid white; border-radius: 4px; cursor: pointer;" onclick="openLightbox(this.src)" />
+    <div class="hero-text" style="max-width: 500px; text-align: center;">
       <h2>Art that screams. Vinyl that bleeds. Welcome to the underground.</h2>
     </div>
-    <img class="hero-photo" src="https://i.ibb.co/3mvCxMS7/40530002.jpg" alt="Right Hero" onclick="openLightbox(this.src)" />
+    <img src="https://i.ibb.co/3mvCxMS7/40530002.jpg" alt="Right Hero Photo" style="max-width: 200px; border: 2px solid white; border-radius: 4px; cursor: pointer;" onclick="openLightbox(this.src)" />
   </section>
 
   <section id="shop" class="collections">
-    <h2>Vandalized Vinyls</h2>
-    <div class="shop-items">
+    <h2 style="font-size: 2.5rem;">Vandalized Vinyls</h2>
+    <div class="shop-items" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; justify-items: center;">
       <div class="item-card">
-        <h3 class="item-title">The Tipping Point (Sold Out)</h3>
-        <img src="https://i.ibb.co/FkgF2RmH/IMG-0273.jpg" alt="The Tipping Point" onclick="openLightbox(this.src)" />
-        <p class="item-description">Painted vinyl of the album cover of "The Tipping Point" by The Roots. <strong>Sold Out</strong></p>
+        <h3 style="font-family: Arial, sans-serif;">The Tipping Point (Sold Out)</h3>
+        <img src="https://i.ibb.co/FkgF2RmH/IMG-0273.jpg" alt="The Tipping Point Photo" style="max-width: 200px; border: 2px solid white; border-radius: 4px; margin-top: 10px; cursor: pointer;" onclick="openLightbox(this.src)" />
+        <p style="font-family: Arial, sans-serif;">Painted vinyl of the album cover of "The Tipping Point" by The Roots. <strong>Sold Out</strong></p>
       </div>
       <div class="item-card">
-        <h3 class="item-title">Phrenology (Sold Out)</h3>
-        <img src="https://i.ibb.co/p6fY4X6C/IMG-0278.jpg" alt="Phrenology" onclick="openLightbox(this.src)" />
-        <p class="item-description">Hand painted album cover of The Roots "Phrenology". <strong>Sold Out</strong></p>
+        <h3 style="font-family: Arial, sans-serif;">Phrenology (Sold Out)</h3>
+        <img src="https://i.ibb.co/p6fY4X6C/IMG-0278.jpg" alt="Phrenology Photo" style="max-width: 200px; border: 2px solid white; border-radius: 4px; margin-top: 10px; cursor: pointer;" onclick="openLightbox(this.src)" />
+        <p style="font-family: Arial, sans-serif;">Hand painted album cover of The Roots "Phrenology". <strong>Sold Out</strong></p>
       </div>
       <div class="item-card">
-        <h3 class="item-title">Flower Boy (Sold Out)</h3>
-        <img src="https://i.ibb.co/ZRkzP1yh/IMG-0285.jpg" alt="Flower Boy" onclick="openLightbox(this.src)" />
-        <p class="item-description">Hand painted album cover of Tyler the Creator's "Flower Boy". <strong>Sold Out</strong></p>
+        <h3 style="font-family: Arial, sans-serif;">Flower Boy (Sold Out)</h3>
+        <img src="https://i.ibb.co/ZRkzP1yh/IMG-0285.jpg" alt="Flower Boy Photo" style="max-width: 200px; border: 2px solid white; border-radius: 4px; margin-top: 10px; cursor: pointer;" onclick="openLightbox(this.src)" />
+        <p style="font-family: Arial, sans-serif;">Hand painted album cover of Tyler the Creator's "Flower Boy". <strong>Sold Out</strong></p>
       </div>
+    
       <div class="item-card">
-        <h3 class="item-title">Pink Mink - $125</h3>
-        <img src="https://i.ibb.co/yFwNTR0y/IMG-0291.jpg" alt="Pink Mink" onclick="openLightbox(this.src)" />
-        <p class="item-description">Infamous shot of Cam'ron wearing his pink mink, hand painted on vinyl record with feathery material adhered.</p>
+        <h3 style="font-family: Arial, sans-serif;">Pink Mink - $125</h3>
+        <img src="https://i.ibb.co/yFwNTR0y/IMG-0291.jpg" alt="Pink Mink Photo" style="max-width: 200px; border: 2px solid white; border-radius: 4px; margin-top: 10px; cursor: pointer;" onclick="openLightbox(this.src)" />
+        <p style="font-family: Arial, sans-serif;">Infamous shot of Cam'ron wearing his pink mink, hand painted on vinyl record with feathery material adhered.</p>
       </div>
     </div>
   </section>
@@ -60,7 +81,7 @@
   </section>
 
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="" alt="Full Size View" />
+    <img id="lightbox-img" src="" alt="Full Size" />
   </div>
 
   <footer>
