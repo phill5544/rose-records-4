@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rebel Rose Studios</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Rebel Rose Studios</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#shop">Vandalized Vinyls</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img class="hero-photo" src="https://i.ibb.co/3Yyskp3k/34200016.jpg" alt="Left Hero" onclick="openLightbox(this.src)" />
+    <div class="hero-text">
+      <h2>Art that screams. Vinyl that bleeds. Welcome to the underground.</h2>
+    </div>
+    <img class="hero-photo" src="https://i.ibb.co/3mvCxMS7/40530002.jpg" alt="Right Hero" onclick="openLightbox(this.src)" />
+  </section>
+
+  <section id="shop" class="collections">
+    <h2>Vandalized Vinyls</h2>
+    <div class="shop-items">
+      <div class="item-card">
+        <h3 class="item-title">The Tipping Point (Sold Out)</h3>
+        <img src="https://i.ibb.co/FkgF2RmH/IMG-0273.jpg" alt="The Tipping Point" onclick="openLightbox(this.src)" />
+        <p class="item-description">Painted vinyl of the album cover of "The Tipping Point" by The Roots. <strong>Sold Out</strong></p>
+      </div>
+      <div class="item-card">
+        <h3 class="item-title">Phrenology (Sold Out)</h3>
+        <img src="https://i.ibb.co/p6fY4X6C/IMG-0278.jpg" alt="Phrenology" onclick="openLightbox(this.src)" />
+        <p class="item-description">Hand painted album cover of The Roots "Phrenology". <strong>Sold Out</strong></p>
+      </div>
+      <div class="item-card">
+        <h3 class="item-title">Flower Boy (Sold Out)</h3>
+        <img src="https://i.ibb.co/ZRkzP1yh/IMG-0285.jpg" alt="Flower Boy" onclick="openLightbox(this.src)" />
+        <p class="item-description">Hand painted album cover of Tyler the Creator's "Flower Boy". <strong>Sold Out</strong></p>
+      </div>
+      <div class="item-card">
+        <h3 class="item-title">Pink Mink - $125</h3>
+        <img src="https://i.ibb.co/yFwNTR0y/IMG-0291.jpg" alt="Pink Mink" onclick="openLightbox(this.src)" />
+        <p class="item-description">Infamous shot of Cam'ron wearing his pink mink, hand painted on vinyl record with feathery material adhered.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Rebel Rose</h2>
+    <p>Julia Rose Warren is a punk-rock painter slashing tradition with skulls, spray paint, and sound. She turns vinyl records into raw tributes to rebellion, rage, and rhythm. Rebel Rose Studios isn’t just an art brand — it's a movement for misfits and music freaks alike.</p>
+  </section>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Full Size View" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Rebel Rose Studios | No rules, just art.</p>
+  </footer>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
